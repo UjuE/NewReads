@@ -1,10 +1,11 @@
 import React from "react";
+import WelcomeText from "./WelcomeText";
 
 class App extends React.Component {
     render() {
         return (
             <div className="component-app">
-                <h1>Hello World</h1>
+                <WelcomeText/>
             </div>
         );
     }

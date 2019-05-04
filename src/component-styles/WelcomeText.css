@@ -1,0 +1,13 @@
+#welcome-block {
+    margin-top: 0.5px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    height: 15%;
+    padding: 8px;
+    color: #eeeeee;
+    border-bottom: #da532c solid 1px;
+}
+
+#sub-titles {
+    margin-top: -8px;
+}
