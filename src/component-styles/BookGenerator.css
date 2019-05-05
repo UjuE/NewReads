@@ -7,7 +7,13 @@
 
 #book-genre{
     margin: 0 auto;
-    width: 93%;
+    width: 99%;
+    background-color: #da532c;
+    height: 50px;
+    text-align: center;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 #book-detail{
@@ -16,8 +22,18 @@
     text-align: center;
     padding: 3px;
     margin-left: 0.5%;
-    display: block;
-    vertical-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#book_summary{
+    width: 45%;
+    text-wrap: normal;
+    text-align: left;
+    padding: 3px;
+    margin-right: 0.5%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .book-list-detail:hover{
@@ -36,4 +52,15 @@
 
 #book-detail h3{
     font-size: 12px;
+}
+
+#google-description{
+    min-height: 200px;
+    max-height: 300px;
+    padding: 10px;
+    display: block;
+    overflow-y: scroll;
+    font-family: "Big Caslon", serif;
+    word-spacing: 0.3em;
+    line-height: 1.3em;
 }

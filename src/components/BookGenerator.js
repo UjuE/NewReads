@@ -39,7 +39,8 @@ class BookGenerator extends React.Component {
                 <select id="book-genre" onChange={this.handleChange} value={this.state.value}>
                     <option>---- Select a Genre ----</option>
                     {this.state.book_types_lists.map(book_detail =>
-                        <option value={book_detail.list_name_encoded}>{book_detail.display_name}</option>)}
+                        <option key={book_detail.list_name_encoded}
+                                value={book_detail.list_name_encoded}>{book_detail.display_name}</option>)}
                 </select>
                 {this.state.book_list_list_name_encoded ?
                     this.randomBookDetailsView() : null}
@@ -59,16 +60,27 @@ class BookGenerator extends React.Component {
         const description = this.state.book_quick_description;
         const author = this.state.book_author;
         let imageUrl = null;
-        if ( googleApiResponse ) {
+        let googleDescription = null;
+        let publishedDate = null;
+        if (googleApiResponse) {
             const googleApiResponseElement = googleApiResponse[0];
-            imageUrl = googleApiResponseElement.volumeInfo.imageLinks.thumbnail;
+            const volumeInfo = googleApiResponseElement.volumeInfo;
+            imageUrl = volumeInfo.imageLinks.thumbnail;
+            googleDescription = volumeInfo.description;
+            publishedDate = volumeInfo.publishedDate;
         }
         return (
-            <div id="book-detail">
-                <h1>{title}</h1>
-                <h3>{author}</h3>
-                <img src={imageUrl} alt={title} width="200px"/>
-                <div>{description}</div>
+            <div>
+                <div id="book-detail">
+                    <h1>{title}</h1>
+                    <h3>{author}</h3>
+                    <img src={imageUrl} alt={title} width="200px"/>
+                    <div>{description}</div>
+                </div>
+                <div id="book_summary">
+                    <p>Published: {publishedDate}</p>
+                    <p id="google-description">{googleDescription}</p>
+                </div>
             </div>
 
         )

@@ -1,7 +1,10 @@
 {
   "name": "new-reads",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "engines": {
+    "node": "10.6.0"
+  },
   "dependencies": {
     "dotenv": "^8.0.0",
     "npm": "^6.9.0",
@@ -23,7 +26,6 @@
       ">0.2%",
       "not dead",
       "not op_mini all",
-      "dotenv:8.0.0"
     ],
     "development": [
       "last 1 chrome version",
