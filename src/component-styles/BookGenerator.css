@@ -1,0 +1,39 @@
+#book-generator {
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#book-genre{
+    margin: 0 auto;
+    width: 93%;
+}
+
+#book-detail{
+    width: 45%;
+    text-wrap: normal;
+    text-align: center;
+    padding: 3px;
+    margin-left: 0.5%;
+    display: block;
+    vertical-align: center;
+}
+
+.book-list-detail:hover{
+    background-color: #da532c;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+#book-detail h1, #book-detail h2, #book-detail h3, #book-detail h4{
+    color: #da532c!important;
+}
+
+#book-detail h1{
+    font-size: 16px;
+}
+
+#book-detail h3{
+    font-size: 12px;
+}
