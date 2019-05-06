@@ -6,8 +6,8 @@ class Footer extends Component {
     render() {
         return (
             <div id="footer">
-                <div>
-                    <a href="https://developer.nytimes.com"  target="_blank" rel="noopener noreferer"><img src={poweredby_nytimes} alt="Powered by NyTimes"/></a>
+                <div className="poweredby">
+                    <a href="https://developer.nytimes.com"  target="_blank" rel="noopener noreferrer"><img src={poweredby_nytimes} alt="Powered by NyTimes"/></a>
                 </div>
             </div>
         )
