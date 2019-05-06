@@ -78,7 +78,7 @@ class BookGenerator extends React.Component {
                     <div>{description}</div>
                 </div>
                 <div id="book_summary">
-                    <p>Published: {publishedDate}</p>
+                    <p><b>Published:</b> {publishedDate}</p>
                     <p id="google-description">{googleDescription}</p>
                 </div>
             </div>
@@ -102,7 +102,8 @@ class BookGenerator extends React.Component {
                         primary_isbn13: bookDetails.primary_isbn13,
                         book_title: bookDetails.title,
                         book_quick_description: bookDetails.description,
-                        book_author: bookDetails.author
+                        book_author: bookDetails.author,
+                        book_list_index: index
                     })
                 }
             );

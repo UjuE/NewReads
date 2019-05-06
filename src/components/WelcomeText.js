@@ -1,14 +1,18 @@
 import React from "react";
 import "../component-styles/WelcomeText.css"
+import NextReadLogo from "../images/CNextReadLogo.png"
 
 class WelcomeText extends React.Component {
     render() {
         return (
             <div id="welcome-block">
-                <h1 id="title">Next Reads</h1>
-                <p id="sub-title">A simple generator to determine the next book to read</p>
+                <div id="welcome-block-contents">
+                    <img src={NextReadLogo} alt="Next Read Logo" width="140px"/>
+                    <p>A simple random generator to determine the next book to read.</p>
+                </div>
             </div>
         )
     }
 }
+
 export default WelcomeText

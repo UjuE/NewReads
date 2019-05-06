@@ -11,3 +11,15 @@
 #sub-titles {
     margin-top: -8px;
 }
+
+#welcome-block-contents {
+    display: inline-block;
+}
+
+#welcome-block-contents p {
+    float: right;
+    vertical-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
